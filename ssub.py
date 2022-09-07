@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+
+# NOTE: YOU NEED TO EDIT YOUR USERNAME (SEE BELOW)
+
+
 import argparse, datetime, itertools, os, os.path, random, re, stat, subprocess, sys, tempfile, time
 
 
@@ -20,7 +24,9 @@ def parse_args():
     parser.add_argument('-n', default=1, help='number of cores (--pe)', type=int)    
     parser.add_argument('-P', default='broad', help='project name')
     parser.add_argument('-H', default='', help='header lines')
-    parser.add_argument('-u', default='user', help='username')
+    
+    # EDIT YOUR USERNAME HERE
+    parser.add_argument('-u', default='USERNAME', help='username')
     parser.add_argument('-s', default='platinum.broadinstitute.org', help='server')
     parser.add_argument('-p', default=False, action='store_true', help='print commands')        
     parser.add_argument('-w', default=60, type=float, help='pipeline wait time (sec)')
