@@ -1,6 +1,6 @@
 
 # setup directories
-mkdir ~/code
+mkdir ~/code/uger
 mkdir /broad/hptmp/${USER}
 ln -s /broad/hptmp/${USER} ~/temp
 ln -s /broad/smillie-data ~/smillie-data
